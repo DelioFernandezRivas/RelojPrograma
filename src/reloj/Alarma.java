@@ -17,6 +17,7 @@ public class Alarma {
     public int tiempo(int tiempo){
         usuario.horaAlarma();
         
+        
     //Aqui recivimos la hora y los minutos que eligió el usuario pasados a segundos
     //Los combertiríamos a horas y minutos y recivimos un int tiempo como una variable que es la hora en la que se en cuentra el usuario
     //que sería la hora en la que estaría situado 
