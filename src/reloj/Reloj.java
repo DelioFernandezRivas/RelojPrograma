@@ -30,7 +30,6 @@ public class Reloj extends javax.swing.JFrame {
         this.setLocation(0, 0);
         System.out.println(this.getLocation());
         Alarma reloj = new Alarma();
-        jLabel1.setText(reloj.reloj());
         this.setLocationRelativeTo(null);
         
 
