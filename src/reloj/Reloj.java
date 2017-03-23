@@ -5,8 +5,6 @@
  */
 package reloj;
 
-import java.awt.Toolkit;
-
 /**
  *
  * @author dfernandezrivas
@@ -19,18 +17,23 @@ public class Reloj extends javax.swing.JFrame {
     public Reloj() {
         initComponents();
         System.out.print(jLabel1.getText());
-        this.setSize(1366, 768);
+        this.setSize(400, 260);
         System.out.println(this.getSize());
-        jLabel1.setSize(1366,768);
+        jLabel1.setSize(400, 260);
         System.out.println(jLabel1.getSize());
         System.out.println(jLabel1.getBounds());
-        jLabel1.setBounds(45, 45, 1366,768);
-        jPanel1.setBounds(45, 45, 1366, 768);
+        jLabel1.setBounds(45, 45, 400, 260);
+        jPanel1.setBounds(45, 45, 400, 260);
         System.out.println(jPanel1.getBounds());
         System.out.println(jLabel1.getBounds());
-        this.setBounds(45, 45, 1366, 768);
+        this.setBounds(45, 45, 400, 260);
         this.setLocation(0, 0);
         System.out.println(this.getLocation());
+        Alarma reloj = new Alarma();
+        jLabel1.setText(reloj.reloj());
+        this.setLocationRelativeTo(null);
+        
+
     }
 
     /**
@@ -46,6 +49,10 @@ public class Reloj extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
+
+        jPanel1.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel1.setOpaque(false);
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("jLabel1");
